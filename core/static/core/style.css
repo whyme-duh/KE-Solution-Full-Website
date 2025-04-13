@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --header-font: "Boldonse", system-ui;
+    --paragraph-font: "Work Sans", sans-serif;
+}
+
+nav{
+    display: flex;
+    overflow: hidden;
+    justify-content: space-evenly;
+    background-color: antiquewhite;
+    align-items: center;
+    padding: 1em;
+}
+.navbar-toggler{
+    display: none;
+}
+.nav-options{
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo{
+    width:200px;
+    height: 30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding: 1em;
+    font-size: 1.25em;
+}
+
+
+
+.intro, .business-setup, .manage-business, .grow-business{
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    justify-content: center;
+    
+}
+
+.intro-content, .business-setup-content, .manage-business-content, .grow-business-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:30%;
+    
+}
+.header{
+    font-size: 2.5em;
+    padding-bottom: 0.5em;
+    font-weight: 900;
+    font-family: var(--header-font);
+}
+
+.paragraph{
+    font-size: 1.25em;
+    font-family: var(--paragraph-font);
+}
+
+.intro-image{   
+    width: 30%;
+}
+.start-here-btn{
+    margin-top: 1em;
+    width: fit-content;
+    border-radius: 5px;
+    padding-inline:1em;
+    background-color: antiquewhite;
+}
+.start-here-btn:hover{
+    background-color: rgb(247, 216, 176);
+}
+
+.business-official{
+    background-color: rgb(255, 247, 239);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.business-official-first-content{
+    margin-top: 5em;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+}
+.business-official-first-content .paragraph{
+    text-align: center;
+    margin-top: 1em;
+}
+
+/* card */
+.services-list{
+    margin-top: 5em;
+    width: 90%;
+    margin-bottom: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.card{
+    border: 1px solid rgb(128, 128, 128)y;
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+    padding:1em;
+    display: flex;
+    border-radius: 3px;
+    box-shadow: 5px 5px 1px rgba(128, 128, 128, 0.12); 
+}
+
+.card h1 {
+    font-size: 1.25em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card p{
+    margin-top: 0.5em;
+    font-size: 1em;
+}
+
+.manage-business{
+    background-color:azure;
+}
+.manage-business-content, .manage-business img{
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+.grow-business-content, .grow-business img{
+    margin-top: 5em;
+    margin-bottom: 5em;
+
+}
+
+footer{
+    width: 100%;
+}
