@@ -16,7 +16,7 @@
         </a>
        
         <div class="nav-options">
-            <a href="#">Form an LLC</a> 
+            <a href="{% url 'llc_view' %}">Form an LLC</a> 
             <a href="#">Services</a>    
             <a href="#">Resources</a>
             <a href="#">Why KE Solution?</a>
@@ -28,93 +28,7 @@
         </a>
     </nav>
     <main>
-        <div class="intro">
-          . <div class="intro-content">
-                <h1 class="header">Entrepreneurship starts here!</h1>
-                <p class="paragraph">Build your business with a platform that simplifies every step of starting, managing, and growing a business</p>  
-                <a class="start-here-btn">Start Here</a>  
-            </div>       
-            <img src="/media/images/hp-main-image2.webp" alt="image" class="intro-image">
-        </div>
-        <div class="business-official">
-            <div class="business-official-first-content">
-                <h1 class="header">We make your business official</h1>
-                <p class="paragraph">Whether you’re already in business or just getting started, our revolutionary
-                    business-building platform connects all the tools needed to build a
-                    successful business and provides personalized guidance.</p>
-            </div>
-            <div class="services-list">
-                <div class="card">
-                    <img src="https://www.tailorbrands.com/wp-content/uploads/2024/12/Frame-4500.png" alt="service-one" width="100px" class="card-image">
-                    <div class="card-detail">
-                        <h1>LLC Formation</h1>
-                        <p>Apply for an LLC in minutes and enjoy the huge benefits it offers by answering a few short questions.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://www.tailorbrands.com/wp-content/uploads/2024/12/Frame-4500.png" alt="service-one" width="100px" class="card-image">
-                    <div class="card-detail">
-                        <h1>LLC Formation</h1>
-                        <p>Apply for an LLC in minutes and enjoy the huge benefits it offers by answering a few short questions.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://www.tailorbrands.com/wp-content/uploads/2024/12/Frame-4500.png" alt="service-one" width="100px" class="card-image">
-                    <div class="card-detail">
-                        <h1>LLC Formation</h1>
-                        <p>Apply for an LLC in minutes and enjoy the huge benefits it offers by answering a few short questions.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://www.tailorbrands.com/wp-content/uploads/2024/12/Frame-4500.png" alt="service-one" width="100px" class="card-image">
-                    <div class="card-detail">
-                        <h1>LLC Formation</h1>
-                        <p>Apply for an LLC in minutes and enjoy the huge benefits it offers by answering a few short questions.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://www.tailorbrands.com/wp-content/uploads/2024/12/Frame-4500.png" alt="service-one" width="100px" class="card-image">
-                    <div class="card-detail">
-                        <h1>LLC Formation</h1>
-                        <p>Apply for an LLC in minutes and enjoy the huge benefits it offers by answering a few short questions.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://www.tailorbrands.com/wp-content/uploads/2024/12/Frame-4500.png" alt="service-one" width="100px" class="card-image">
-                    <div class="card-detail">
-                        <h1>LLC Formation</h1>
-                        <p>Apply for an LLC in minutes and enjoy the huge benefits it offers by answering a few short questions.</p>
-                    </div>
-                </div>
-               
-            </div>
-        </div>
-        <div class="business-setup">
-            <div class="business-setup-content">
-                <h1 class="header">Set up your business</h1>
-                <p class="paragraph">Form your LLC with an EIN and file for all the licenses and permits you need to legally operate and make sure your business is set up for success.</p>  
-            </div>
-    
-            <img src="https://www.tailorbrands.com/wp-content/uploads/2023/09/set-up.png" alt="business-setup" width="500px" class="intro-image">
-        </div>
-
-        <div class="manage-business">
-            <img src="https://www.tailorbrands.com/wp-content/uploads/2023/09/manage-768x512.png" alt="business-setup" width="500px" class="intro-image">
-            <div class="manage-business-content">
-                <h1 class="header">Manage your business</h1>
-                <p class="paragraph">Get your business bank account, stay on top of your finances 
-                    with our budget planner, and access pre-designed legal contracts and documents to streamline interactions with vendors.
-                </p>  
-            </div>
-        </div>
-        <div class="grow-business">
-            <div class="grow-business-content">
-                <h1 class="header">Grow your business</h1>
-                <p class="paragraph">Expand your reach and gain more attention with an e-commerce store, custom website, and a suite of marketing tools.</p>  
-            </div>
-    
-            <img src="https://www.tailorbrands.com/wp-content/uploads/2023/10/grow-768x624.png" alt="grow-business" width="500px" class="intro-image">
-        </div>
+        {% block content %}{% endblock %}
        
     </main>
  
