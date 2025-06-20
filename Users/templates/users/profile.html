@@ -1,0 +1,14 @@
+{% extends 'core/index.html'%}
+
+{% block title %}Profile{% endblock%}
+
+{% block content%}
+
+<div class="container">
+    <h1>profile</h1>
+    <form action="{% url 'logout' %}" method="POST">
+        {% csrf_token %}
+        <button type="submit">Logout</button>
+    </form>
+</div>
+{% endblock %}
