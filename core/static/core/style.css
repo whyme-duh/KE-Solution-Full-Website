@@ -12,17 +12,18 @@
 nav{
     display: flex;
     overflow: hidden;
-    justify-content: space-evenly;
-    background-color: antiquewhite;
+    justify-content: space-around;
+    background-color: rgb(197, 234, 250);
     align-items: center;
-    padding: 1em;
+    width: 100%;
 }
+
 .navbar-toggler{
     display: none;
 }
 .nav-options{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 .logo{
@@ -32,8 +33,9 @@ nav{
 a{
     text-decoration: none;
     color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 1em;
-    font-size: 1.25em;
+    font-size: 1em;
 }
 
 
@@ -42,7 +44,9 @@ a{
     display: flex;
     align-items: center;
     margin-top: 2em;
-    justify-content: center;
+    height: 90vh;
+    justify-content: space-around;
+
     
 }
 
@@ -50,7 +54,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width:30%;
+    width:40%;
     
 }
 .header{
