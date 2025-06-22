@@ -15,7 +15,6 @@ nav{
     justify-content: space-around;
     background-color: rgb(197, 234, 250);
     align-items: center;
-    width: 100%;
 }
 
 .navbar-toggler{
@@ -77,7 +76,8 @@ a{
     width: fit-content;
     border-radius: 5px;
     padding-inline:1em;
-    background-color: antiquewhite;
+    background-color: #164378;
+    color: white;
 }
 .start-here-btn:hover{
     background-color: rgb(247, 216, 176);
@@ -148,64 +148,4 @@ a{
 
 footer{
     width: 100%;
-}
-
-/* USERS */
-.form-main-container{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
-    margin-top: 2em;
-}
-.form-container {
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-}
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.form-group input {
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-/* Submit button */
-.submit-btn {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.submit-btn:hover {
-    background-color: #45a049;
-}
-
-/* Focus styles for inputs */
-input:focus {
-    border-color: #4CAF50;
-    outline: none;
-}
-
-input:focus + label {
-    color: #4CAF50;
 }
