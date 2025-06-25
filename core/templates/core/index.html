@@ -8,6 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>{% block title %} {% endblock %}</title>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+
 </head>
 <body>
     <nav class="topnav" id="topNav">
@@ -36,12 +40,27 @@
             <i class="fa fa-bars"></i>
         </a>
     </nav>
+    {% if messages %}
+    <div class="container" id="message-container">
+        {% for msg in messages %}
+        <div class="alert alert-{{ msg.tags }} w-25">
+        {{ msg }}
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
     <main>
+        
         {% block content %}{% endblock %}
        
     </main>
- 
-    <script src="index.js"></script>
+    <script>
+        setTimeout(function () {
+                    $('#message-container').fadeOut('fast');
+                }, 3000);
+            
+    </script>
 
 </body>
+
 </html>

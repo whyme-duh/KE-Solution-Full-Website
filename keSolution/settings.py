@@ -33,7 +33,7 @@ ALLOWED_HOSTS = ['*',]
 
 INSTALLED_APPS = [
     'core',
-    'Users',
+    'users',
     'widget_tweaks',
     'django.contrib.admin',
     'django.contrib.auth',

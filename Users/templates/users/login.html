@@ -25,6 +25,13 @@
 
             <button type="submit" class="submit-btn">Login</button>
         </form>
+        {%  if form.errors  %}
+            {% for error in form.errors.as_data.values %}
+                {% for data in error.0 %}
+                    <p style="color:red;margin-top:1em;">{{ data|escape}}</p>
+                {% endfor %}
+            {% endfor %}
+        {% endif %}
     </div>
 </div>
 {% endblock %}

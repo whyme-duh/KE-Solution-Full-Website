@@ -25,8 +25,10 @@
                 <label for="password_confirm">Confirm Password</label>
                  {% render_field form.password2 class="form-control" placeholder="Enter Password" type="password" %}
             </div>
+        {{form.errors}}
 
             <button type="submit" class="submit-btn">Register</button>
+
         </form>
     </div>
 </div>
