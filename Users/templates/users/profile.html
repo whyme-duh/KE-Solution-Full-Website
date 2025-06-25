@@ -4,12 +4,53 @@
 
 {% block content%}
 
-<div class="container">
-    <h1>profile</h1>
-    {{user.email}}
-    <form action="{% url 'logout' %}" method="POST">
-        {% csrf_token %}
-        <button type="submit">Logout</button>
-    </form>
+<div class="profile-container">
+    <div class="profile-top">
+        <h1>Welcome {{user.username|title}},</h1>
+        <form action="{% url 'logout' %}" method="POST">
+            {% csrf_token %}
+            <button type="submit" class="logout-btn">Logout</button>
+        </form>
+    </div>
+    <div class="profile-updates">
+        <h1>My Updates</h1>
+        <div class="updates">
+            <p>No updates at the moment, please check it later. </p>
+        </div>
+    </div>
+    <div class="profile-bookkeeping">
+        <h1>Invoices & Bookkeeping</h1>
+        {% for pro in profile %}
+        {% if pro.user == user %}
+        <div class="bookkeeping">
+            <div class="income">
+                <h4>Income</h4>
+                <h3>${{pro.income}}</h3>
+            </div>
+            <hr>
+            <div class="expenses">
+                <h4>Expenses</h4>
+                <h3>${{pro.expense}}</h3>
+
+            </div>
+            <hr>
+            
+            <div class="invoices">
+                <h4>Invoices</h4>
+                <h3>${{pro.invoice}}</h3>
+
+            </div>
+            <hr>
+
+            <div class="profit-after-tax">
+                <h4>Profit after tax</h4>
+                <h3>${{pro.profit_after_tax}}</h3>
+
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+   
 </div>
 {% endblock %}
