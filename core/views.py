@@ -8,4 +8,7 @@ def index(request):
 
 
 def llc_view(request):
-    return render (request, 'core/LLC/llc.html')
+    return render (request, 'core/services/llc.html')
+
+def invoice_bookkeeping_view(request):
+    return render (request, 'core/services/invandbook.html')

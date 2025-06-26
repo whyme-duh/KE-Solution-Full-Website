@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{% static 'core/style.css' %}">
     <link rel="stylesheet" href="{% static 'users/userStyle.css' %}">
+    <link rel="stylesheet" href="{% static 'core/services/servicestyle.css' %}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>{% block title %} {% endblock %}</title>
@@ -21,6 +22,7 @@
        
         <div class="nav-options">
             <a href="{% url 'llc_view' %}">Form an LLC</a> 
+            <a href="{% url 'invoice_bookkeeping' %}">Invoices and Bookkeeping</a> 
             <a href="#">Services</a>    
             <a href="#">Resources</a>
             <a href="#">Contact Us</a>

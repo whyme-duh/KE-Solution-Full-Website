@@ -1,0 +1,87 @@
+.invoice-and-bookkeeping-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    height: 90vh;
+    margin-top: 2em;
+}
+
+.invoice-and-bookkeeping-content{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.invoice-and-bookkeeping-content h1{
+    font-family: var(--header-font);
+    font-weight: 900;
+}
+.invoice-and-bookkeeping-content p{
+    font-family: var(--paragraph-font);
+}
+
+.bookkeeping-image-container{
+    display: flex;
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+}
+.invoice-and-bookkeeping-container img{
+    height: 500px;
+}
+.try-btn{
+    margin-top: 2em;
+}
+
+.bookkeeping-necessary{
+    margin-top: 5em;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+.finance-manager{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+    text-align: center;
+}
+.finance-manager h1{
+    font-family: var(--header-font);
+}
+.finance-manager p{
+    font-family: var(--paragraph-font);
+    margin-top: 2em;
+}
+
+.cards-finance{
+    margin-top: 3em;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1em;
+}
+.card-individual{
+    padding: 2em;
+    text-align: center;
+    width: 15%;
+    border: 0.5px solid rgb(233, 231, 231);
+    box-shadow: 2px 2px 3px rgb(206, 203, 203);
+}
+.card-individual h4{
+    margin-top: 1em;
+    font-family: var(--header-font);
+}
+.card-image{
+    height: 100px;
+}
+
+.card-individual p{
+    margin-top: 1em;
+    font-size: 0.85em;
+    font-family: var(--paragraph-font);
+    margin-bottom: 1em;
+}

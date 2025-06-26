@@ -117,14 +117,16 @@ main{
 .intro-image{   
     width: 30%;
 }
-.start-here-btn{
+.start-here-btn, .try-btn{
     margin-top: 1em;
     width: fit-content;
     border-radius: 5px;
     padding-inline:1em;
     background-color: #164378;
     color: white;
+    padding: 1em;
 }
+
 .start-here-btn:hover{
     background-color: rgb(247, 216, 176);
 }
