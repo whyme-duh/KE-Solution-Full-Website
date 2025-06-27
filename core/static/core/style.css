@@ -45,6 +45,7 @@ a{
 
 }
 
+
 @keyframes messageAnimation {
     0%{
         left:-300px;
@@ -90,7 +91,7 @@ main{
     display: flex;
     align-items: center;
     margin-top: 2em;
-    height: 90vh;
+    height: 60vh;
     justify-content: space-around;
 
     
@@ -135,6 +136,7 @@ main{
 .business-official{
     background-color: rgb(255, 247, 239);
     display: flex;
+    width: 100%;
     justify-content: center;
     flex-direction: column;
     align-items: center;

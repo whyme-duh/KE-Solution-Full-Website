@@ -2,7 +2,6 @@
     width: 80%;
     display: flex;
     justify-content: space-between;
-    height: 90vh;
     margin-top: 2em;
 }
 
@@ -84,4 +83,30 @@
     font-size: 0.85em;
     font-family: var(--paragraph-font);
     margin-bottom: 1em;
+}
+
+.llc-container{
+    margin-top: 2em;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.llc-container h1{
+    font-family: var(--header-font);
+}
+.llc-container p{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: var(--paragraph-font);
+}
+
+.llc-container-content{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.llc-container-image{
+    width: 20%;
 }
